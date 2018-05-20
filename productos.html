@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/productos.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display+SC|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+	<div id="main-container">
+		<div id="productos-section" class="bg-products">
+			<div id="logo">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div><!-- logo -->
+
+			<div id="menu-productos">
+				<ul>
+					<li><a href="jugos.html"><h2><span>JUGOS</span></h2></a></li>
+					<li><a href="mermeladas.html"><h2><span>MERMELADAS</span></h2></a></li>
+					<li><a href="ajvar.html"><h2><span>AJVAR</span></h2></a></li>
+				</ul>
+			</div><!-- menu -->
+		</div><!-- main-container -->
+
+		<div id="footer">
+			<ul>
+				<li><a href="terminos.html">TÉRMINOS</a></li>
+				<li><a href="privacidad.html">PRIVACIDAD</a></li>
+				<li><a href="copyright.html">COPYRIGHT</a></li>
+			</ul>
+			<div id="derechos">
+				© Vida MRR. Derechos Reservados
+			</div>
+		</div><!-- footer -->
+		
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			$(".point").on("click", function(){
+				var i = $(this).index();
+				$("#points-info div").hide();
+				$("#points-info").fadeIn();
+				$("#points-info div").eq(i).show();
+			});
+
+			$(".close-btn").on("click", function(){
+				$("#points-info").fadeOut();
+			});
+		});
+	</script>
+</body>
+</html>

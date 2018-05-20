@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/productos.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display+SC|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+	<div id="main-container">
+		<div id="productos-section" class="bg-ajvar">
+			<div id="logo">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+				<div id="back">
+					<a href="productos.html"> < Regresar</a>
+				</div>
+			</div><!-- logo -->
+
+			
+
+			<div class="productos-titulo">
+				<h1>AJVAR</h1>
+			</div>
+		</div><!-- main-container -->
+
+		<div class="productos-content">
+			<section id="ajvar01-content">
+				<div class=" description algn-left">
+					<h2>100%</h2>
+					<h3>Natural</h3>
+					<p>La gente aquí realmente ama los vegetales. No permitirían que no fueran 100% naturales para poder disfrutarlos.</p>
+				</div>
+			</section>
+			<section id="ajvar02-content">
+				<div class=" description algn-center">
+					<h2>11</h2>
+					<h3>Pimientos</h3>
+					<p>Nuestro avjar es hecho de pimientos rojos tostados, aceite, vinagre y sal. ¿Por qué sabe tan bien? porque usamos 11 pimientos en una solo frasco.</p>
+				</div>
+			</section>
+			<section id="ajvar03-content">
+				<div class=" description algn-right">
+					<h2>Simfonía</h2>
+					<h3>de sabores</h3>
+					<p>Corta un pan en cuadritos. Unta un poco de queso Feta y avjar, enróllalos y ponlo en el horno a 200ºC</p>
+				</div>
+			</section>
+		</div>
+
+		<div id="footer">
+			<ul>
+				<li><a href="terminos.html">TÉRMINOS</a></li>
+				<li><a href="privacidad.html">PRIVACIDAD</a></li>
+				<li><a href="copyright.html">COPYRIGHT</a></li>
+			</ul>
+			<div id="derechos">
+				© Vida MRR. Derechos Reservados
+			</div>
+		</div><!-- footer -->
+		
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			$(".point").on("click", function(){
+				var i = $(this).index();
+				$("#points-info div").hide();
+				$("#points-info").fadeIn();
+				$("#points-info div").eq(i).show();
+			});
+
+			$(".close-btn").on("click", function(){
+				$("#points-info").fadeOut();
+			});
+		});
+	</script>
+</body>
+</html>

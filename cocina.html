@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display+SC|Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/historia.css">
+	
+</head>
+<body>
+	<div id="main-container">
+		<div id="points-container">
+			<a href="#" class="point p0"><div>+</div></a>
+			<a href="#" class="point p1"><div>+</div></a>
+			<a href="#" class="point p2"><div>+</div></a>
+			<a href="#" class="point p3"><div>+</div></a>
+			<a href="#" class="point p4"><div>+</div></a>
+		</div>
+		<div id="points-info">
+			<div>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi adipisci eaque quasi aperiam totam earum quibusdam, omnis soluta, possimus nam architecto, voluptas, reprehenderit reiciendis. Accusantium quos deserunt cum incidunt.</p>
+				
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#" class="btn btn-vrd close-btn">Cerrar</a></p>
+			</div>
+			<div>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi adipisci eaque quasi aperiam totam earum quibusdam, omnis soluta, possimus nam architecto, voluptas, reprehenderit reiciendis. Accusantium quos deserunt cum incidunt.</p>
+				
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#" class="btn btn-vrd close-btn">Cerrar</a></p>
+			</div>
+			<div>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi adipisci eaque quasi aperiam totam earum quibusdam, omnis soluta, possimus nam architecto, voluptas, reprehenderit reiciendis. Accusantium quos deserunt cum incidunt.</p>
+				
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#" class="btn btn-vrd close-btn">Cerrar</a></p>
+			</div>
+			<div>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi adipisci eaque quasi aperiam totam earum quibusdam, omnis soluta, possimus nam architecto, voluptas, reprehenderit reiciendis. Accusantium quos deserunt cum incidunt.</p>
+				
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#" class="btn btn-vrd close-btn">Cerrar</a></p>
+			</div>
+			<div>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi adipisci eaque quasi aperiam totam earum quibusdam, omnis soluta, possimus nam architecto, voluptas, reprehenderit reiciendis. Accusantium quos deserunt cum incidunt.</p>
+				
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p><a href="#" class="btn btn-vrd close-btn">Cerrar</a></p>
+			</div>
+		</div>
+		<div id="historia-section" class="bg-cocina">
+			<div id="logo">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div><!-- logo -->
+
+			<div id="menu">
+				<h2>Cocina</h2>
+				<h3>Sobre los años registrados</h3>
+
+				<ul>
+					<li><a href="historia.html">
+						<div class="point-out">
+							<div class="point-in"></div>
+						</div>
+
+						PUEBLO
+					</a></li>
+					<li><a href="cosecha.html">
+						<div class="point-out">
+							<div class="point-in"></div>
+						</div>
+						COSECHA
+					</a></li>
+
+					<li><a href="cocina.html">
+						<div class="point-out active-point">
+							<div class="point-in"></div>
+						</div>
+						COCINA
+					</a></li>
+
+					<li><a href="ciudad.html">
+						<div class="point-out">
+							<div class="point-in"></div>
+						</div>
+						CIUDAD
+					</a></li>
+				</ul>
+			</div><!-- menu -->
+		</div><!-- main-container -->
+
+		<div id="footer">
+			<ul>
+				<li><a href="terminos.html">TÉRMINOS</a></li>
+				<li><a href="privacidad.html">PRIVACIDAD</a></li>
+				<li><a href="copyright.html">COPYRIGHT</a></li>
+			</ul>
+			<div id="derechos">
+				© Vida MRR. Derechos Reservados
+			</div>
+		</div><!-- footer -->
+		
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+			$(".point").on("click", function(){
+				var i = $(this).index();
+				$("#points-info div").hide();
+				$("#points-info").fadeIn();
+				$("#points-info div").eq(i).show();
+			});
+
+			$(".close-btn").on("click", function(){
+				$("#points-info").fadeOut();
+			});
+		});
+	</script>
+
+
+
+</body>
+</html>
