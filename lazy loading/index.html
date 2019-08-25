@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazy Loading</title>
+    <style>
+
+        img{
+            background: #eee;
+            transition: 1s all;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            box-sizing: border-box;
+            background-color: #ddd;
+            margin: 0;
+            padding: 0;
+        }
+        #main-container{
+            background-color: #fff;
+            margin: 0 auto;
+            width: 700px;
+            vertical-align: top;
+        }
+
+        main{
+            display: inline-block;
+            padding: 10px;
+            
+            width: 495px;
+            vertical-align: top;
+        }
+
+        aside{
+            background-color: #000;
+            color: white;
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <main>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem doloremque corrupti sint? Dolorem quia corporis nihil reprehenderit at quasi placeat necessitatibus laudantium tenetur sint dignissimos, iure harum ad! Blanditiis, maiores?
+            </p>
+            <p>
+                    <img loading="lazy" src="https://1.bp.blogspot.com/-5WrsE6_k7hU/XKEhulK9KSI/AAAAAAAAla8/qcV3qfK7P9s8yS_StZZbWKpZp5TspYfhQCLcBGAs/s640/degradados-01.jpg" width="100%" alt="">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+            </p>
+            <p>
+                    <img src="https://2.bp.blogspot.com/-l4HDj6WBDbQ/XKEhujsW5SI/AAAAAAAAla0/kREBeeP1XgMaDYM_bz2_IduoPZ9Rv2Q4wCLcBGAs/s640/degradados-02.jpg" width="100%" alt="">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+            </p>
+            <p>
+                    <img src="https://3.bp.blogspot.com/-q2IfOSPmzgY/XKEhupMQQaI/AAAAAAAAla4/31pgqV-MijMKXENt6gxQjCMzsDEdSzbIQCLcBGAs/s640/degradados-03.jpg" width="100%" alt="">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+            </p>
+            <p>
+                    <img src="https://4.bp.blogspot.com/-VTi_hL91JFU/XKEhuxh2d4I/AAAAAAAAlbE/Hs_anvjIEN8sC7tqnVBxTa-xD6kGFTCbgCLcBGAs/s640/degradados-04.jpg" width="100%" alt="">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+            </p>
+            <p>
+                    <img src="https://marcosrivasr.github.io/img/home.jpg" width="100%" alt="" loading="lazy">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+            </p>
+
+            <p>
+                    <img src="https://marcosrivasr.github.io/img/home.jpg" width="100%" alt="" class="placeholder">
+                    
+            </p>
+            <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab doloremque aperiam. Consequatur aspernatur optio facere asperiores deleniti rerum velit minima, error laudantium quia dolorem quidem vero perspiciatis corporis sunt.
+                </p>
+                <p>
+                        <img src="https://1.bp.blogspot.com/-yKmJWVssJfY/XKEhv3nIFII/AAAAAAAAlbI/PKrom20WoIcnxT2qcDseynpTaw4ZlDpWQCLcBGAs/s640/degradados-06.jpg" width="100%" alt="" loading="lazy">
+                </p>
+        </main>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat cumque dolorum itaque non exercitationem alias odit quia ab suscipit, laboriosam sunt reprehenderit magnam repellendus. Rem temporibus est deleniti vel!
+        </aside>
+    </div>
+</body>
+</html>
